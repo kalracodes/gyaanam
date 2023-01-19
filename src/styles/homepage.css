@@ -1,0 +1,146 @@
+.Hero {
+	background-color: #0a2640;
+	color: white;
+	width: 100vw;
+}
+.hero-content {
+	margin-top: 5.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hero-bold {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 4rem;
+	line-height: 5.25rem;
+}
+.hero-para {
+	margin-top: 0.875rem;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	color: #f1f1f1;
+}
+.hero-button {
+	margin-top: 1.25rem;
+	padding: 1rem 3.5rem;
+	border: none;
+	border-radius: 1.5rem;
+	color: #0a2640;
+	background-color: #69e6a6;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	margin-bottom: 12rem;
+	cursor: pointer;
+}
+.hero-button:hover {
+	color: #69e6a6;
+	background-color: #0a2640;
+	border: 0.0625rem solid #69e6a6;
+	margin-bottom: 11.875rem;
+}
+.home-grid-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+	margin-left: 9.375%;
+	margin-right: 9.375%;
+	margin-top: -6rem;
+	row-gap: 2rem;
+}
+.item {
+	background-color: lightblue;
+	height: 18.75rem;
+	width: 18.75rem;
+	border-radius: 1.5rem;
+	text-align: center;
+}
+.item img {
+	object-fit: cover;
+	height: 18.75rem;
+	width: 18.75rem;
+	border-radius: 1.5rem;
+}
+.item2 img {
+	object-fit: cover;
+	height: 39.5rem;
+	width: 18.75rem;
+	border-radius: 1.5rem;
+}
+
+.item2 {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	height: 39.5rem;
+}
+.home-center-content {
+	margin-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 18.75%;
+	margin-right: 18.75%;
+}
+.home-center-p1 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	color: #777777;
+}
+.home-center-bold {
+	margin-top: 1.75rem;
+	font-family: "Manrope";
+	font-weight: 400;
+	font-size: 3rem;
+	line-height: 4.5rem;
+	color: #0a2640;
+}
+.home-center-p2 {
+	margin-top: 2.125rem;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	margin-bottom: 12.5rem;
+}
+.home-services-content {
+	padding-top: 7.5rem;
+	background-color: #0a2640;
+	color: white;
+	padding-left: 18.75rem;
+}
+.home-services-p1 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	color: #ffffff;
+}
+.home-services-bold {
+	margin-top: 0.75rem;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3rem;
+	line-height: 4.5rem;
+}
+.home-services-p2 {
+	margin-top: 1.5rem;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	color: #f1f1f1;
+	padding-bottom: 6rem;
+}
+
+.home-service1,.home-service2{
+  margin-bottom: 4.5rem;
+}

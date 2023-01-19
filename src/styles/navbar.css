@@ -1,0 +1,47 @@
+
+.navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:  3.5rem 6.25rem 0 6.25rem;
+}
+.navbar-brandname{
+  color:#69E6A6;
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-buttons{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin:0;
+}
+.nav-buttons li{
+  list-style: none;
+  margin-left: 3rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.nav-buttons li:hover{
+  color: #69E6A6;
+}
+.nav-buttons li button{
+  color:#0A2640;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  padding: .5rem 2.5rem .5rem 2.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.nav-buttons li button:hover{
+  color: white;
+  background-color:#0A2640;
+  border: .0625rem solid white;
+  margin-left: calc(-0.0625rem*2);
+}
