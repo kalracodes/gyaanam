@@ -1,0 +1,95 @@
+.container {
+	margin-top: 150px;
+	width: 650px;
+	display: none;
+}
+.progress-bar{
+  position: absolute;
+  top:0;
+  padding:5px 0px;
+  background-color: #69e6a6;
+}
+.container-2{
+	display: block;
+}
+.main {
+  /* height:100vh; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.survey-number {
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #c4c4c4;
+}
+.survey-header {
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.75rem;
+	color: #000000;
+}
+.survey-inputs {
+	margin-top: 2.5rem;
+}
+.survey-inputs input {
+	margin-bottom: 1.25rem;
+}
+.survey-options {
+	/* width: 100%; */
+	margin-left: .5rem;
+	display: inline-block;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+.survey-buttons {
+	margin-top: 2.5rem;
+	display: flex;
+	flex-direction: row;
+}
+.previous button {
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: #0a2640;
+	background-color: transparent;
+	padding: 1rem 3.5rem;
+	border: 1px solid #0a2640;
+	border-radius: 3.5rem;
+	cursor: pointer;
+	transition: all 0.25s;
+	margin-right: 2.5rem;
+}
+.previous button:hover {
+	background-color: #0a2640;
+	color: white;
+}
+.next button {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: #0a2640;
+	background-color: #69e6a6;
+	border: 2px solid #69e6a6;
+	border-radius: 3.5rem;
+  padding: 1rem 3.5rem;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.next button:hover{
+  color: #69e6a6;
+  background-color: #0a2640;
+  border: 2px solid #0a2640;
+}

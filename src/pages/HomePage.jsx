@@ -1,19 +1,23 @@
 import React from "react";
-import {link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Navbar } from "../components/navbar";
 import "../styles/homepage.css";
-import img1 from "../assests/homepage/img1.jpeg";
+import img1 from "../assests/homepage/img1.webp";
 import img2 from "../assests/homepage/img2.svg";
-import img3 from "../assests/homepage/img3.jpeg";
+import img_desktop from "../assests/homepage/grid-img-desktop.webp";
+import img_mobile from "../assests/homepage/grid-img-mobile.webp";
+import img1_mobile from "../assests/homepage/img1-mobile.webp";
+import img_tab2 from "../assests/homepage/grid-img-tab2.webp";
+import img_tab from "../assests/homepage/grid-img-tab.webp";
+import img1_tab1 from "../assests/homepage/img1-tab1.webp";
 import img4 from "../assests/homepage/img4.svg";
-import img5 from "../assests/homepage/img5.jpeg";
 import img6 from "../assests/homepage/img6.svg";
 import feather from "../assests/homepage/feather.svg";
 import eye from "../assests/homepage/eye.svg";
 import sun from "../assests/homepage/sun.svg";
 export function HomePage() {
 	return (
-		<>
+		<div className="homepage">
 			<div className="Hero">
 				<Navbar />
 				<div className="hero-content">
@@ -23,29 +27,35 @@ export function HomePage() {
 					<div className="hero-para">
 						This survey is conducted by GET to know and acknowledge
 						the students struggling with their curriculum.
-						<br />
+						<br className="Remove_when_small" />
 						You are kindly requested to be a part of this survey and
 						help GET with its campaign.
 					</div>
-					<button className="hero-button">Take Survey</button>
+					<Link className="link" to="/survey">
+						<button className="hero-button">Take Survey</button>
+					</Link>
 				</div>
 			</div>
 			<div className="home-grid-section">
-				<div className="item1 item">
-					<img src={img1} alt="" />
-				</div>
-				<div className="item2 item">
-					<img src={img3} alt="" />
-				</div>
-				<div className="item3 item">
-					<img src={img2} alt="" />
-				</div>
-				<div className="item4 item">
-					<img src={img4} alt="" />
-				</div>
-				<div className="item5 item">
-					<img src={img5} alt="" />
-				</div>
+				<img src={img_desktop} className="img-desktop" alt="" />
+				<img
+					src={img_mobile}
+					className="img-mobile first-img"
+					style={{ display: "none" }}
+					alt=""
+				/>
+				<img
+					src={img_tab}
+					className="img-tab1"
+					style={{ display: "none" }}
+					alt=""
+				/>
+				<img
+					src={img_tab2}
+					className="img-tab2"
+					style={{ display: "none" }}
+					alt=""
+				/>
 			</div>
 			<div className="home-center-content">
 				<div className="home-center-p1">Our vision</div>
@@ -74,7 +84,7 @@ export function HomePage() {
 				</div>
 				<div className="home-services">
 					<div className="home-service1 home-service-common">
-						<img src={img2} height="150px" alt="" />
+						<img src={img2} alt="" />
 						<div className="home-services-content-body home-services-content-common-body">
 							<div className="home-services-body-headers">
 								Accessible to all
@@ -87,7 +97,7 @@ export function HomePage() {
 						</div>
 					</div>
 					<div className="home-service2 home-service-common">
-						<img src={img4} height="150px" alt="" />
+						<img src={img4} alt="" />
 						<div className="home-services-content-body home-services-content-common-body">
 							<div className="home-services-body-headers">
 								Student-friendly
@@ -100,7 +110,7 @@ export function HomePage() {
 						</div>
 					</div>
 					<div className="home-service3 home-service-common">
-						<img src={img6} height="150px" alt="" />
+						<img src={img6} alt="" />
 						<div className="home-services-content-body home-services-content-common-body">
 							<div className="home-services-body-headers">
 								Better support
@@ -144,7 +154,31 @@ export function HomePage() {
 							</ul>
 						</div>
 					</div>
-					<div className="home-feature-img1"></div>
+					<div className="home-feature-img1">
+						<img src={img1} className="img-desktop" alt="" />
+						<img
+							src={img1_mobile}
+							className="img-mobile first-img"
+							style={{ display: "none" }}
+							alt=""
+						/>
+						<img
+							src={img1_tab1}
+							className="img-tab1 sec-img"
+							style={{ display: "none" }}
+							alt=""
+						/>
+						<img
+							src={img1_tab1}
+							className="img-tab2 sec-img"
+							style={{ display: "none" }}
+							alt=""
+						/>
+					</div>
+					<div className="home-feature1-paraxyz">
+						Every student's
+						<br /> Education companion
+					</div>
 				</div>
 				{/* <div className="home-feature2 features">
 					<div className="home-feature2-content">
@@ -171,12 +205,12 @@ export function HomePage() {
 			<div className="home-survey">
 				Take Survey CTA
 				<div className="home-survey-button">
-					<button>Start now</button>
+					<Link className="link" to="/survey">
+						<button>Start Now</button>
+					</Link>
 				</div>
 			</div>
-			<footer>
-			All rights reserved @Gyaanam2023
-			</footer>
-		</>
+			<footer>All rights reserved @Gyaanam2023</footer>
+		</div>
 	);
 }

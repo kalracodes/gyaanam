@@ -1,9 +1,13 @@
 
 .navbar{
+  padding:  3.5rem 6.25rem 0 6.25rem;
+}
+.navbar-inner{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  padding:  3.5rem 6.25rem 0 6.25rem;
+  padding-bottom:1.5rem ;
+  border-bottom:  1px solid #69E6A6; 
 }
 .navbar-brandname{
   color:#69E6A6;
@@ -45,4 +49,28 @@
   background-color:#0A2640;
   border: .0625rem solid white;
   margin-left: calc(-0.0625rem*2);
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1100px){
+	.navbar{
+    padding: 3.5rem 5rem 0 5rem;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 950px){
+	.navbar{
+    padding: 3.5rem 3.5rem 0 3.5rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 750px){
+	.navbar{
+    padding: 3.5rem 2.5rem 0 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px){
+	.navbar{
+    padding: 3.5rem 2.5rem 0 2.5rem;
+  }
+  .nav-buttons{
+    display: none;
+  }
 }
