@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/navbar.css";
+import lines from "../assests/navbar/3lines.svg"
 export function Navbar() {
 	return (
 		<div className="navbar">
@@ -13,6 +14,7 @@ export function Navbar() {
 						<button>Log In</button>
 					</li> */}
 				</ul>
+				<img className="lines" src={lines} alt="" />
 			</div>
 		</div>
 	);

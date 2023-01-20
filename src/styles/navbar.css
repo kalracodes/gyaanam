@@ -50,6 +50,9 @@
   border: .0625rem solid white;
   margin-left: calc(-0.0625rem*2);
 }
+.lines{
+  display: none;
+}
 
 @media only screen and (min-width: 950px) and (max-width: 1100px){
 	.navbar{
@@ -72,5 +75,8 @@
   }
   .nav-buttons{
     display: none;
+  }
+  .lines{
+    display: block;
   }
 }

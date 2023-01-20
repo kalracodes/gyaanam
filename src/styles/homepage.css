@@ -637,6 +637,9 @@ height: 357.48px; */
     font-size: .75rem;
     line-height: 1.35rem;
 	}
+	.home-feature1-paraxyz{
+		font-size: 2rem;
+	}
 }
 @media only screen and (min-width: 350px) and (max-width: 400px) {
 	.first-img {
@@ -657,5 +660,32 @@ height: 357.48px; */
 		font-weight: 400;
     font-size: .7rem;
     line-height: 1.2rem;
+	}
+	.home-feature1-paraxyz{
+		font-size: 1.9rem;
+	}
+}
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+	.first-img {
+		width: 300px;
+	}
+	.home-feature1-points ul li{
+		min-width: 300px;
+	}
+	.home-services-body-headers{
+		line-height: 2rem;
+		font-size: 1rem;
+	}
+	.home-service-common img{
+		height:125px;
+	}
+	.home-services-body-para
+	{
+		font-weight: 400;
+    font-size: .7rem;
+    line-height: 1.2rem;
+	}
+	.home-feature1-paraxyz{
+		font-size: 1.9rem;
 	}
 }

@@ -18,6 +18,39 @@ export function Survey() {
 				<div className="container container-1">
 					<div className="survey-number">1 of 8</div>
 					<div className="survey-header">Basic Info</div>
+					<div className="survey-inputs">
+						<input
+							type="text"
+							name="Name"
+							id="name"
+							placeholder="Your Name"
+							className="que1"
+						/>
+						<label for="name"></label>
+						<br />
+						<input
+							type="tel"
+							name="Phone"
+							id="phone"
+							placeholder="Your Phone Name"
+							className="que1"
+						/>
+						<label for="name"></label>
+						<br />
+						<input
+							type="email"
+							name="Email"
+							id="email"
+							placeholder="Your Email"
+							className="que1"
+						/>
+						<label for="name"></label>
+					</div>
+					<div className="survey-buttons">
+						<div className="next">
+							<button>Next</button>
+						</div>
+					</div>
 				</div>
 				<div className="container container-2">
 					<div className="survey-number">2 of 8</div>
@@ -328,7 +361,8 @@ export function Survey() {
 				<div className="container container-8">
 					<div className="survey-number">8 of 8</div>
 					<div className="survey-header">
-						Have you ever experienced AVLS(audio visual learning system)?
+						Have you ever experienced AVLS(audio visual learning
+						system)?
 					</div>
 					<div className="survey-inputs">
 						<input

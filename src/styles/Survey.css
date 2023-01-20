@@ -1,6 +1,6 @@
 .container {
-	margin-top: 150px;
-	width: 650px;
+	margin-top: 1rem;
+	width: 600px;
 	display: none;
 }
 .progress-bar{
@@ -9,11 +9,35 @@
   padding:5px 0px;
   background-color: #69e6a6;
 }
-.container-2{
+.que1 {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	padding: 0.75rem 1.25rem;
+	width: 600px;
+	/* border-color:#C4C4C4; */
+	margin-bottom: 1rem;
+	border: 1px solid #c4c4c4;
+	border-radius: 240px;
+	cursor: pointer;
+}
+.que1::placeholder{
+	color: #c4c4c4;
+}
+.que1:active,
+.que1:focus {
+	border: 1px solid #1169fe;
+}
+.que1:active::placeholder,.que1:focus::placeholder{
+	color: #1169fe;
+}
+.container-1{
 	display: block;
 }
 .main {
-  /* height:100vh; */
+  height:100vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -92,4 +116,25 @@
   color: #69e6a6;
   background-color: #0a2640;
   border: 2px solid #0a2640;
+}
+
+@media only screen and (min-width: 650px) and (max-width:750px) {
+	.container,.que1{
+		width: 500px;
+	}
+}
+@media only screen and (min-width: 550px) and (max-width:650px){
+	.container,.que1{
+		width: 400px;
+	}
+}
+@media only screen and (min-width: 450px) and (max-width:550px){
+	.container,.que1{
+		width: 300px;
+	}
+}
+@media only screen and (max-width:450px){
+	.container,.que1{
+		width: 200px;
+	}
 }
