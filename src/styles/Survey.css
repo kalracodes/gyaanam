@@ -1,192 +1,198 @@
 .container {
-	margin-top: 1rem;
-	width: 600px;
-	display: none;
+  margin-top: 1rem;
+  width: 600px;
+  display: none;
 }
 .progress-bar {
-	position: absolute;
-	top: 0;
-	background-color: #69e6a6;
-	transition: all 1s;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
+  position: absolute;
+  top: 0;
+  background-color: #69e6a6;
+  transition: all 1s;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .que1 {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.25rem;
-	line-height: 2rem;
-	padding: 0.75rem 1.25rem;
-	width: 600px;
-	/* border-color:#C4C4C4; */
-	margin-bottom: 1rem;
-	border: 1px solid #c4c4c4;
-	border-radius: 240px;
-	cursor: pointer;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 0.75rem 1.25rem;
+  width: 600px;
+  /* border-color:#C4C4C4; */
+  margin-bottom: 1rem;
+  border: 1px solid #c4c4c4;
+  border-radius: 240px;
+  cursor: pointer;
 }
 .que1::placeholder {
-	color: #c4c4c4;
+  color: #c4c4c4;
 }
 .que1:active,
 .que1:focus {
-	border: 1px solid #1169fe;
+  border: 1px solid #1169fe;
 }
 .que1:active::placeholder,
 .que1:focus::placeholder {
-	color: #1169fe;
+  color: #1169fe;
 }
 
 .fail::placeholder {
-	color: #fe1511;
+  color: #fe1511;
 }
 
 .container-1 {
-	display: block;
+  display: block;
 }
 .container-2 {
-	display: block;
+  display: block;
 }
 .container-3 {
-	display: block;
+  display: block;
 }
 .container-4 {
-	display: block;
+  display: block;
 }
 .container-5 {
-	display: block;
+  display: block;
 }
 .container-6 {
-	display: block;
+  display: block;
 }
 .container-7 {
-	display: block;
+  display: block;
 }
 .container-8 {
-	display: block;
+  display: block;
 }
 .container-9 {
-	display: block;
+  display: block;
 }
 .container-10 {
-	display: block;
+  display: block;
+}
+.container-11 {
+  display: block;
+}
+.container-12 {
+  display: block;
 }
 
 .main {
-	height: 100vh;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .survey-number {
-	font-family: "Manrope";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 2rem;
-	color: #c4c4c4;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #c4c4c4;
 }
 .survey-header {
-	font-family: "Manrope";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 2rem;
-	line-height: 2.75rem;
-	color: #000000;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #000000;
 }
 .survey-inputs {
-	margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 .survey-inputs input {
-	margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .survey-options {
-	/* width: 100%; */
-	margin-left: 0.5rem;
-	display: inline-block;
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.25rem;
-	line-height: 2rem;
+  /* width: 100%; */
+  margin-left: 0.5rem;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 .survey-buttons {
-	margin-top: 2.5rem;
-	display: flex;
-	flex-direction: row;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
 }
 .previous button {
-	font-family: "Open Sans";
-	font-weight: 700;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	color: #0a2640;
-	background-color: transparent;
-	padding: 1rem 3.5rem;
-	border: 1px solid #0a2640;
-	border-radius: 3.5rem;
-	cursor: pointer;
-	transition: all 0.25s;
-	margin-right: 2.5rem;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #0a2640;
+  background-color: transparent;
+  padding: 1rem 3.5rem;
+  border: 1px solid #0a2640;
+  border-radius: 3.5rem;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin-right: 2.5rem;
 }
 .previous button:hover {
-	background-color: #0a2640;
-	color: white;
+  background-color: #0a2640;
+  color: white;
 }
 .next button {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	color: #0a2640;
-	background-color: #69e6a6;
-	border: 2px solid #69e6a6;
-	border-radius: 3.5rem;
-	padding: 1rem 3.5rem;
-	transition: all 0.25s;
-	cursor: pointer;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #0a2640;
+  background-color: #69e6a6;
+  border: 2px solid #69e6a6;
+  border-radius: 3.5rem;
+  padding: 1rem 3.5rem;
+  transition: all 0.25s;
+  cursor: pointer;
 }
 .next button:hover {
-	color: #69e6a6;
-	background-color: #0a2640;
-	border: 2px solid #0a2640;
+  color: #69e6a6;
+  background-color: #0a2640;
+  border: 2px solid #0a2640;
 }
 
 @media only screen and (min-width: 650px) and (max-width: 750px) {
-	.container,
-	.que1 {
-		width: 500px;
-	}
+  .container,
+  .que1 {
+    width: 500px;
+  }
 }
 @media only screen and (min-width: 550px) and (max-width: 650px) {
-	.container,
-	.que1 {
-		width: 400px;
-	}
+  .container,
+  .que1 {
+    width: 400px;
+  }
 }
 @media only screen and (min-width: 450px) and (max-width: 550px) {
-	.container,
-	.que1 {
-		width: 300px;
-	}
+  .container,
+  .que1 {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 450px) {
-	.container,
-	.que1 {
-		width: 200px;
-	}
+  .container,
+  .que1 {
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 550px) {
-	.survey-buttons {
-		flex-direction: column;
-	}
-	.next {
-		margin-top: 1rem;
-	}
-	.survey-header {
-		font-size: 1.5rem;
-		line-height: 2.25rem;
-	}
+  .survey-buttons {
+    flex-direction: column;
+  }
+  .next {
+    margin-top: 1rem;
+  }
+  .survey-header {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
 }
