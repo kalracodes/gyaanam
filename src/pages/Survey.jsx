@@ -21,6 +21,7 @@ export function Survey() {
   const [avlsHelp, setAvlsHelp] = useState('');
   const [failNAme, setFailName] = useState(false);
   const [failRef, setFailRef] = useState(false);
+  const [failReview, setFailReview] = useState(false);
   const [failEmail, setFailEmail] = useState(false);
   const [failPhone, setFailPhone] = useState(false);
 
@@ -82,7 +83,7 @@ export function Survey() {
       ></div>
       <div className='main'>
         <div className={num === 1 ? 'container container-1' : 'container '}>
-          <div className='survey-number'>1 of 10</div>
+          <div className='survey-number'>1 of 11</div>
           <div className='survey-header'>Basic Info</div>
           <div className='survey-inputs'>
             <input
@@ -128,7 +129,7 @@ export function Survey() {
                   console.log(isPhone(phone));
                   if (name !== '' && isEmail(email) && isPhone(phone)) {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 1);
+                    setProgress((100 / 11) * 1);
                   } else {
                     if (name === '') {
                       setFailName(true);
@@ -148,7 +149,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 2 ? 'container container-2' : 'container '}>
-          <div className='survey-number'>2 of 10</div>
+          <div className='survey-number'>2 of 11</div>
           <div className='survey-header'>Field Chosen</div>
           <div className='survey-inputs'>
             <input
@@ -201,7 +202,7 @@ export function Survey() {
                   if (survey === '') {
                   } else {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 2);
+                    setProgress((100 / 11) * 2);
                   }
                 }}
               >
@@ -211,7 +212,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 3 ? 'container container-3' : 'container '}>
-          <div className='survey-number'>3 of 10</div>
+          <div className='survey-number'>3 of 11</div>
           <div className='survey-header'>
             How satisfied were you with your studies currently?
           </div>
@@ -265,7 +266,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress(100 / 10);
+                  setProgress(100 / 11);
                 }}
               >
                 Previous
@@ -277,7 +278,7 @@ export function Survey() {
                   if (studyStais === '') {
                   } else {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 3);
+                    setProgress((100 / 11) * 3);
                   }
                 }}
               >
@@ -287,7 +288,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 4 ? 'container container-4' : 'container '}>
-          <div className='survey-number'>4 of 10</div>
+          <div className='survey-number'>4 of 11</div>
           <div className='survey-header'>
             What subject seems to be the most troublesome for you?
           </div>
@@ -341,7 +342,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 2);
+                  setProgress((100 / 11) * 2);
                 }}
               >
                 Previous
@@ -352,7 +353,7 @@ export function Survey() {
                 onClick={() => {
                   if (subject !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 4);
+                    setProgress((100 / 11) * 4);
                   }
                 }}
               >
@@ -362,7 +363,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 5 ? 'container container-5' : 'container '}>
-          <div className='survey-number'>5 of 10</div>
+          <div className='survey-number'>5 of 11</div>
           <div className='survey-header'>
             Have you looked out for help regarding the subject that you feel is
             tough for you?
@@ -396,7 +397,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 3);
+                  setProgress((100 / 11) * 3);
                 }}
               >
                 Previous
@@ -407,7 +408,7 @@ export function Survey() {
                 onClick={() => {
                   if (help !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 5);
+                    setProgress((100 / 11) * 5);
                   }
                 }}
               >
@@ -417,7 +418,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 6 ? 'container container-6' : 'container '}>
-          <div className='survey-number'>6 of 10</div>
+          <div className='survey-number'>6 of 11</div>
           <div className='survey-header'>
             Which entrance examination are you preparing to appear for?
           </div>
@@ -460,7 +461,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 4);
+                  setProgress((100 / 11) * 4);
                 }}
               >
                 Previous
@@ -471,7 +472,7 @@ export function Survey() {
                 onClick={() => {
                   if (exam !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 6);
+                    setProgress((100 / 11) * 6);
                   }
                 }}
               >
@@ -481,7 +482,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 7 ? 'container container-7' : 'container '}>
-          <div className='survey-number'>7 of 10</div>
+          <div className='survey-number'>7 of 11</div>
           <div className='survey-header'>
             So far how good is your preparation for upcoming hurdles
             (examination)?
@@ -547,7 +548,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 5);
+                  setProgress((100 / 11) * 5);
                 }}
               >
                 Previous
@@ -558,7 +559,7 @@ export function Survey() {
                 onClick={() => {
                   if (rate !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 7);
+                    setProgress((100 / 11) * 7);
                   }
                 }}
               >
@@ -568,7 +569,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 8 ? 'container container-8' : 'container'}>
-          <div className='survey-number'>8 of 10</div>
+          <div className='survey-number'>8 of 11</div>
           <div className='survey-header'>
             Have you ever experienced AVLS(audio visual learning system)?
           </div>
@@ -601,7 +602,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 6);
+                  setProgress((100 / 11) * 6);
                 }}
               >
                 Previous
@@ -612,7 +613,7 @@ export function Survey() {
                 onClick={() => {
                   if (avls !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 8);
+                    setProgress((100 / 11) * 8);
                   }
                 }}
               >
@@ -622,7 +623,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 9 ? 'container container-9' : 'container '}>
-          <div className='survey-number'>9 of 10</div>
+          <div className='survey-number'>9 of 11</div>
           <div className='survey-header'>
             What are your views on the audio visual learning? Will it make a
             positive difference in your learning method?
@@ -656,7 +657,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 7);
+                  setProgress((100 / 11) * 7);
                 }}
               >
                 Previous
@@ -667,7 +668,7 @@ export function Survey() {
                 onClick={() => {
                   if (avlsHelp !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 9);
+                    setProgress((100 / 11) * 9);
                   }
                 }}
               >
@@ -677,16 +678,17 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 10 ? 'container container-10' : 'container'}>
-          <div className='survey-number'>10 of 10</div>
+          <div className='survey-number'>10 of 11</div>
           <div className='survey-header'>
             What are your opinions as a student, that would lead to betterment
             in the learning pattern
           </div>
           <div className='survey-inputs'>
             <input
+            className={failReview ? "fail que10" : "que10"}
               type='textarea'
               name='review'
-              placeholder='Your message here'
+              placeholder={failReview ? 'Please give your reviews' : 'Your message here'}
               value={review}
               onChange={(e) => setReview(e.target.value)}
             />
@@ -696,7 +698,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 8);
+                  setProgress((100 / 11) * 8);
                 }}
               >
                 Previous
@@ -707,7 +709,10 @@ export function Survey() {
                 onClick={() => {
                   if (review !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 10);
+                    setProgress((100 / 11) * 10);
+                  }
+                  else{
+                    setFailReview(true);
                   }
                 }}
               >
@@ -717,7 +722,7 @@ export function Survey() {
           </div>
         </div>
         <div className={num === 11 ? 'container container-11' : 'container'}>
-          <div className='survey-number'>10 of 10</div>
+          <div className='survey-number'>11 of 11</div>
           <div className='survey-header'>Referral(If not type N/A)</div>
           <div className='survey-inputs'>
             <input
@@ -735,7 +740,7 @@ export function Survey() {
               <button
                 onClick={() => {
                   setNum(num - 1);
-                  setProgress((100 / 10) * 9);
+                  setProgress((100 / 11) * 9);
                 }}
               >
                 Previous
@@ -746,7 +751,7 @@ export function Survey() {
                 onClick={() => {
                   if (referal !== '') {
                     setNum(num + 1);
-                    setProgress((100 / 10) * 11);
+                    setProgress((100 / 11) * 11);
                     sendForm();
                   } else {
                     setFailRef(true);
